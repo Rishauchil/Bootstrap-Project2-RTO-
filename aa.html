@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Bootstrap 5 Image Alert</title>
+</head>
+<body>
+
+<div class="container mt-5">
+  <!-- Alert for Image -->
+  <div class="alert alert-primary" role="alert">
+    <div class="d-flex align-items-center">
+      <img src="path/to/your/image.jpg" alt="Image" class="mr-3" style="max-width: 50px; max-height: 50px;">
+      <div>
+        <h5 class="alert-heading">Image Alert!</h5>
+        <p>This is an example of an alert with an image.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Another Example: Alert for Image with Close Button -->
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <div class="d-flex align-items-center">
+      <img src="path/to/another/image.jpg" alt="Image" class="mr-3" style="max-width: 50px; max-height: 50px;">
+      <div>
+        <h5 class="alert-heading">Image Alert with Close Button!</h5>
+        <p>This is another example with a close button.</p>
+      </div>
+    </div>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

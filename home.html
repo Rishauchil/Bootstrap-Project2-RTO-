@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>RTO Website Using Bootstrap Alerts</title>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      marquee{
+        background-color: black;
+        color: white;
+        height: 60px;
+      }
+      body{
+        /* background-color: lightgreen; */
+        background-image: url(./background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:initial ;
+        height: 100%
+      }
+      
+      .road{
+        margin-left: 550px; 
+        margin-bottom: 400px;
+      }
+      
+      .parent{
+        position: relative;
+      }
+      .child{
+        /* position: absolute; */
+        top: 0px;
+        left: 350px;
+        display: inline;
+      }
+      
+    </style>
+</head>
+<body>
+  <h1 style="text-align: center;"><marquee behavior="" direction="right" width="100%"><em>RTO Website</em></marquee></h1>
+  <div class="parent">
+  <img src="sign_1.png" alt="Signal_1" style="width: 80px;height: 80px; position: absolute;left: 400px; top: 10px;" class="sign_1"  data-bs-toggle="tooltip" data-bs-placement="top" title="U-Turn Prohibited" >
+
+  <img src="sign_8.png" alt="Signal_2" style="width: 80px;height: 80px; position: absolute;left: 400px; top: 130px;" class="sign_2"  data-bs-toggle="tooltip" data-bs-placement="top" title="Hump">
+
+  <img src="sign_5.png" alt="Signal_3" style="width: 80px;height: 80px; position: absolute;left: 400px; top: 250px;" class="sign_3"  data-bs-toggle="tooltip" data-bs-placement="top" title="Left-turn Prohibited">
+  
+  <img src="sign_4.png" alt="Signal_4" style="width: 80px;height: 80px; position: absolute;left: 400px; top: 370px;" class="sign_3"  data-bs-toggle="tooltip" data-bs-placement="top" title="Narrow Road">
+  
+  <img src="sign_3.png" alt="Signal_5" style="width: 80px;height: 80px; position: absolute;left: 400px; top: 490px;" class="sign_3"  data-bs-toggle="tooltip" data-bs-placement="top" title="School Ahead">
+ 
+
+
+  <div class="child">
+  <img src="./road.jpg" alt="Road image!!" class="road" style=" height: 577px;" >
+  </div>
+    
+  <!-- margin-left: 540px; -->
+    
+  <img src="sign_6.png" alt="Signal_6" style="width: 80px;height: 80px; position: absolute;left: 850px; top: 10px;" class="sign_3"  data-bs-toggle="tooltip" data-bs-placement="top" title="Right Reverse Bend">
+    
+    
+    <img src="sign_7.png" alt="Signal_7" style="width: 80px;height: 80px;position: absolute;left: 850px; top: 130px;" class="sign_3"  data-bs-toggle="tooltip" data-bs-placement="top" title="Pedestrian Crossing">
+    
+    
+    <img src="symb_2.png" alt="Signal_8" style="width: 80px;height: 80px;position: absolute;left: 850px; top: 250px;" class="sign_8"  data-bs-toggle="tooltip" data-bs-placement="top" title="Stop">
+    
+    <img src="sign_9.png" alt="Signal_9" style="width: 80px;height: 80px;position: absolute;left: 850px; top: 370px;" class="sign_3"  data-bs-toggle="tooltip" data-bs-placement="top" title="Uneven Road">
+    
+    
+    <img src="sign_10.png" alt="Signal_10" style="width: 80px;height: 80px;position: absolute;left: 850px; top: 490px;" class="sign_3"  data-bs-toggle="tooltip" data-bs-placement="top" title="No Parking">
+  </div>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+   <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+         return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+   </script>
+
+    
+</body>
+</html>
